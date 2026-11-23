@@ -1,0 +1,33 @@
+{
+  "dataset_status": "SYNTHETIC_PILOT_ONLY",
+  "n_analysis_ready": 150,
+  "dispute_types": {
+    "Termination dispute": 93,
+    "Rights dispute": 40,
+    "Interest dispute": 13,
+    "Inter-union dispute": 4
+  },
+  "outcomes": {
+    "Partly granted": 57,
+    "Granted": 37,
+    "Rejected": 32,
+    "Dismissed on procedural grounds": 20,
+    "Unknown": 4
+  },
+  "execution_status": {
+    "Not observable": 131,
+    "Unknown": 19
+  },
+  "duration_valid_n": 131,
+  "duration_missing_n": 19,
+  "duration_median_days": 131.0,
+  "duration_q25_days": 94.5,
+  "duration_q75_days": 170.5,
+  "worker_representation": {
+    "Advocate": 62,
+    "Union": 34,
+    "Legal Aid": 24,
+    "Self-represented": 19,
+    "Unknown": 11
+  }
+}

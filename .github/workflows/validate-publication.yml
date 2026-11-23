@@ -1,0 +1,21 @@
+name: Validate Publication Readiness
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publication-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify no raw PDFs or credentials committed
+        run: |
+          if find . -name "*.pdf" -o -name "kaggle.json" -o -name ".env" | grep -q .; then
+            echo "ERROR: Prohibited raw PDFs or credential files detected!"
+            exit 1
+          fi
+      - name: Verify release manifest and SHA256SUMS
+        run: |
+          test -f publication/release_manifest.json
+          test -f publication/SHA256SUMS.txt
+          (cd publication && sha256sum -c SHA256SUMS.txt)

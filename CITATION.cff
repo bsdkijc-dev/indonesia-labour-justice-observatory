@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this research observatory, schema, or pipeline, please cite it as below."
+title: "Indonesia Labour Justice Observatory (ILJO) v1.0"
+version: 1.0.0
+date-released: 2026-11-23
+authors:
+  - family-names: Mustafa
+    given-names: Cecep
+    email: cecepmustafa97@gmail.com
+repository-code: "https://github.com/bsdkijc-dev/indonesia-labour-justice-observatory"
+license: MIT
+keywords:
+  - Indonesian labour law
+  - Industrial Relations Court
+  - Pengadilan Hubungan Industrial
+  - Access to justice
+  - Judicial empirical research
+  - JPAIS

@@ -1,0 +1,37 @@
+version: "1.0"
+quality_thresholds:
+  min_extraction_confidence: 0.85
+  min_quality_score_for_analysis: 0.80
+  max_missing_date_rate: 0.15
+
+checks:
+  - id: CHK_01_CASE_NUMBER
+    description: "case_number must be non-empty and match Indonesian PHI docket pattern"
+    severity: error
+  - id: CHK_02_DATE_ORDER
+    description: "decision_date must not precede registration_date"
+    severity: error
+  - id: CHK_03_PUB_DATE_ORDER
+    description: "publication_date must not precede decision_date"
+    severity: warning
+  - id: CHK_04_DUPLICATE_HASH
+    description: "document_sha256 must be unique across active records"
+    severity: error
+  - id: CHK_05_DUPLICATE_CASE
+    description: "(case_number, court_name) must be unique"
+    severity: error
+  - id: CHK_06_CONTROLLED_VOCAB
+    description: "dispute_type, judgment_outcome, court_level, execution_status must be in schema enums"
+    severity: error
+  - id: CHK_07_SOURCE_URL
+    description: "source_url must be a valid https URL"
+    severity: error
+  - id: CHK_08_AI_CONFIDENCE_GATE
+    description: "Records with extraction_method=ai_assisted and extraction_confidence < 0.85 are blocked from published statistics"
+    severity: error
+  - id: CHK_09_APPEAL_CONSISTENCY
+    description: "Interest dispute and Inter-union dispute cannot be Appealed to cassation under UU 2/2004"
+    severity: warning
+  - id: CHK_10_PII_SCAN
+    description: "claim_summary and metadata must contain zero unredacted NIK, phone, email, or personal address patterns"
+    severity: error

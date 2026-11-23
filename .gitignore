@@ -1,0 +1,33 @@
+# Secrets & Credentials
+.env
+.env.*
+*.pem
+*.key
+kaggle.json
+*credentials*
+*secret*
+
+# Raw & Unapproved Data (Never commit raw court PDFs or PII)
+data/raw/
+data/staging/
+data/processed/*.parquet
+data/processed/*.duckdb
+data/processed/*.db
+*.pdf
+*.html
+*.docx
+
+# Logs & Runtime Artifacts
+logs/
+*.log
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,26 @@
+field_name,data_type,nullable,controlled_values,description,privacy_sensitivity
+record_id,string,false,ILJO-YYYY-NNNN,Unique ILJO record identifier,Low
+case_number,string,false,Free text (standardized),Official court docket number (e.g. 12/Pdt.Sus-PHI/2024/PN Jkt.Pst),Low
+court_name,string,false,Standardized court name,Name of PHI District Court or Mahkamah Agung,Low
+court_level,string,false,PHI_First_Instance|MA_Cassation|Unknown,Judicial instance level,Low
+case_category,string,false,Pdt.Sus-PHI|K/Pdt.Sus-PHI,Procedural case classification,Low
+dispute_type,string,false,Rights dispute|Interest dispute|Termination dispute|Inter-union dispute|Unknown,Statutory dispute category per UU 2/2004,Low
+registration_date,date,true,YYYY-MM-DD,Date case was registered at court,Low
+decision_date,date,true,YYYY-MM-DD,Date judgment was pronounced,Low
+publication_date,date,true,YYYY-MM-DD,Date judgment was published on Direktori Putusan,Low
+plaintiff_type,string,false,Worker|Union|Employer|Employer Association|Multiple|Unknown,Role of initiating party (de-identified),Low
+defendant_type,string,false,Worker|Union|Employer|Employer Association|Multiple|Unknown,Role of responding party (de-identified),Low
+worker_representation,string,false,Advocate|Union|Legal Aid|Self-represented|Unknown,Type of worker legal representation,Low
+employer_representation,string,false,Advocate|In-house Legal|Self-represented|Unknown,Type of employer legal representation,Low
+claim_summary,string,false,De-identified summary text,Concise summary of claims without personal names or IDs,Medium
+judgment_outcome,string,false,Granted|Partly granted|Rejected|Dismissed on procedural grounds|Other|Unknown,Dispositive outcome of the judgment,Low
+remedy_type,string,false,Semicolon-separated controlled list,Remedies ordered (Unpaid wages; Severance pay; Compensation; Reinstatement; Other; None; Unknown),Low
+appeal_status,string,false,Not appealed|Appealed to cassation|Cassation decided|Not appealable|Unknown|Not observable,Observable cassation status,Low
+execution_status,string,false,Confirmed executed|Confirmed partially executed|Confirmed not executed|Unknown|Not observable,Evidence of post-judgment execution (never inferred from judgment alone),Low
+source_url,uri,false,https://putusan3.mahkamahagung.go.id/...,Canonical source URL,Low
+source_retrieved_at,datetime,false,ISO-8601 UTC timestamp,Timestamp when source was retrieved,Low
+document_sha256,string,false,64-char hex SHA-256,Cryptographic hash of source document or synthetic payload,Low
+extraction_method,string,false,rule_based|ai_assisted|hybrid|manual_verified|synthetic,Method used to extract structured fields,Low
+extraction_confidence,float,false,0.0 to 1.0,Confidence score of extraction,Low
+validation_status,string,false,Validated|Pending|Flagged|Rejected,Quality validation gate status,Low
+publication_status,string,false,Approved|Pending_Review|Restricted|Synthetic_Only,Publication approval gate status,Low

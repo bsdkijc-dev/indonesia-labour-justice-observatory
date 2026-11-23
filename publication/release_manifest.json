@@ -1,0 +1,24 @@
+{
+  "project": "Indonesia Labour Justice Observatory",
+  "version": "1.0.0",
+  "generated_at": "2026-11-23T03:50:00+00:00",
+  "approved_at": "2026-11-23T03:57:28+00:00",
+  "approved_by": "Cecep Mustafa, Ph.D.",
+  "publication_status": "APPROVED_FOR_GITHUB_KAGGLE",
+  "data_provenance": "SYNTHETIC_PILOT_ONLY",
+  "governance_checks": {
+    "zero_imputation_verified": true,
+    "pii_scan_passed_public_release": true,
+    "raw_pdfs_excluded": true,
+    "credentials_excluded": true,
+    "unit_tests_passed": true
+  },
+  "release_artifacts": [
+    "../data/public/phi_synthetic_release_candidate.csv",
+    "../schemas/phi_schema.json",
+    "../schemas/data_dictionary.csv",
+    "kaggle/dataset-metadata.json",
+    "github/RELEASE_NOTES_v1.0.md",
+    "dashboard/index.html"
+  ]
+}
