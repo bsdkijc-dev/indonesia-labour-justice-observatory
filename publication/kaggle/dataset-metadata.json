@@ -1,5 +1,5 @@
 {
-  "title": "Indonesia Labour Justice Observatory (ILJO) v1.0 — Synthetic Pilot Dataset",
+  "title": "ILJO v1.0: PHI Synthetic Pilot Dataset",
   "id": "judicialcollege/iljo-phi-synthetic-pilot-v1",
   "licenses": [
     {
@@ -13,6 +13,6 @@
     "access to justice",
     "synthetic data"
   ],
-  "subtitle": "Schema-validated synthetic pilot dataset and reproducible pipeline for Indonesian PHI research",
+  "subtitle": "Synthetic pilot dataset & pipeline for Indonesian PHI research",
   "description": "Independent research initiative directed by Cecep Mustafa, Ph.D. Contains 150 schema-validated, privacy-reviewed synthetic records (2021-2026) demonstrating the ILJO v1.0 data standard pending authorized access to Direktori Putusan Mahkamah Agung RI."
 }
