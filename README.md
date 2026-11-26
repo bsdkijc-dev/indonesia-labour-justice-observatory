@@ -1,4 +1,18 @@
-# Indonesia Labour Justice Observatory (ILJO) v1.0
+<div align="center">
+
+<img src="assets/logo.svg" alt="Indonesia Labour Justice Observatory (ILJO) Logo" width="140">
+
+# Indonesia Labour Justice Observatory (ILJO)
+
+### Empirical research on Industrial Relations Court (PHI) decisions and workers' access to justice in Indonesia.
+
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat)](LICENSE) ![Stack](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat&logo=python&logoColor=white) [![CI](https://github.com/bsdkijc-dev/indonesia-labour-justice-observatory/actions/workflows/validate-data.yml/badge.svg)](https://github.com/bsdkijc-dev/indonesia-labour-justice-observatory/actions/workflows/validate-data.yml)
+
+[Documentation](research/) · [Repository](https://github.com/bsdkijc-dev/indonesia-labour-justice-observatory)
+
+</div>
+
+---
 
 **Research Question:** *"What Do Indonesian Court Decisions Tell Us About Workers' Access to Justice?"*  
 **Research Director:** Cecep Mustafa, Ph.D.  
@@ -34,3 +48,13 @@ python3 -m unittest discover -s tests -p "test_*.py" -v
 ## Governance & Citation
 
 See `CITATION.cff`, `LICENSE`, and `governance/` for ethical, privacy, and redistribution rules.
+
+---
+
+<div align="center">
+
+**Indonesia Labour Justice Observatory (ILJO)**
+
+[github.com/bsdkijc-dev/indonesia-labour-justice-observatory](https://github.com/bsdkijc-dev/indonesia-labour-justice-observatory)
+
+</div>
